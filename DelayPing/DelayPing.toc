@@ -1,0 +1,6 @@
+## Interface: 40300
+## Title: DelayPing
+## Author: Ket
+## Version: 0.1
+
+main.lua
