@@ -1,0 +1,6 @@
+## Interface: 40300
+## Title: GobDel
+## Author: Ket
+## Version: 1.0
+
+main.lua
