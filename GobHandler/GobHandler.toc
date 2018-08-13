@@ -1,0 +1,8 @@
+## Interface: 70000
+## Title: GobHandler
+## Author: Prosper
+## Version: 0
+
+VAR.lua
+FUN.lua
+GUI.lua

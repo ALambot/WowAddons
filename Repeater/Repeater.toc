@@ -1,0 +1,6 @@
+## Interface: 40300
+## Title: Repeater
+## Author: Flakk/Prosper
+## Version: 0.1
+
+loop.lua
