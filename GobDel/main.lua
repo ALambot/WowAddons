@@ -14,8 +14,8 @@ local GDdragFrame = CreateFrame("Frame", "GDDragFrame", UIParent)
 GDdragFrame:SetMovable(true)
 GDdragFrame:EnableMouse(true)
 GDdragFrame:RegisterForDrag("LeftButton")
-GDdragFrame:SetScript("OnDragStart", frame.StartMoving)
-GDdragFrame:SetScript("OnDragStop", frame.StopMovingOrSizing)
+GDdragFrame:SetScript("OnDragStart", GDdragFrame.StartMoving)
+GDdragFrame:SetScript("OnDragStop", GDdragFrame.StopMovingOrSizing)
 
 GDdragFrame:SetPoint("CENTER");
 GDdragFrame:SetWidth(150);
@@ -83,7 +83,8 @@ GobFrame:SetScript("OnEvent",
 
                 GUID = string.sub(arg1,i+6,j-1)
 
-                if tonumber(GUID) > 11600000 then -- GUID security check
+                if true then
+                --if tonumber(GUID) > 11600000 then -- GUID security check
                     --SendChatMessage(".gob del " .. GUID, "GUILD")
                     if GDdistanceCheckButton:GetChecked() ~= nil then
                         listenGobPos = 1
@@ -189,7 +190,7 @@ GDChatFilterFrame:SetScript("OnEvent",
 		end)
 
 function GDChatFilter(self,event,msg)
-    if GDchatFilterCheckButton:GetChecked() ~= nil then
+    if GDchatFilterCheckButton:GetChecked() then
         return true
     end
 
